@@ -173,28 +173,27 @@ saveas(gcf,filename);
 %}
 
 %plot(log10(time_infield_11),log10(hair_11))
-plot(log10(time_infield_11),hair_10,'LineWidth',2)
+plot(log10(time_infield_11),hair_10,'-','LineWidth',2)
 hold on
-plot(log10(time_infield_11),hair_11,'LineWidth',2)
+plot(log10(time_infield_11),hair_11,'--','LineWidth',2)
 %plot(log10(time_infield_11(end-45647:end)),-1.0.*log10(time_infield_11(end-45647:end)) + 1.25,'k--')
 %plot(log10(time_infield_12),log10(hair_12))
-plot(log10(time_infield_12),hair_12,'LineWidth',2)
+plot(log10(time_infield_12),hair_12,'-.','LineWidth',2)
 %plot(log10(time_infield_13),log10(hair_13))
-plot(log10(time_infield_13),hair_13,'LineWidth',2)
+plot(log10(time_infield_13),hair_13,':','LineWidth',2)
 %plot(log10(time_infield_14),log10(hair_14))
-plot(log10(time_infield_14),hair_14,'LineWidth',2)
+plot(log10(time_infield_14),hair_14,'-.','LineWidth',2)
 %plot(log10(time_infield_11(end-45647:end)),-1.0.*log10(time_infield_11(end-45647:end)) + 0.75,'k--')
 hold off
 xlim([2,3.5])
 ylim([0,60])
-%xlabel('$\log_{10}\left(\frac{t}{M}\right)$','Interpreter','latex')
-xlabel('Time')
-ylabel('Hair')
-%ylabel('$|\partial_{r}(\psi_{0}\psi_{4})|$','Interpreter','latex')
-%legend('1.0','1.1','1.2','1.3','1.4','Interpreter','latex')
+xlabel('$\log_{10}\left(\frac{v}{M}\right)$','Interpreter','latex')
+%xlabel('Time')
+%ylabel('Hair')
+ylabel('$|\xi_{2,2}''|$','Interpreter','latex')
+legend('1.0','1.1','1.2','1.3','1.4','Interpreter','latex')
 
-%filename = fullfile('plots', 'hair_vs_t_all.pdf');
-%filename = fullfile('plots', 'hair_vs_t_all_linear.pdf');
+filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear.pdf');
 %filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear.png');
-filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear_PR.png');
+%filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear.fig');
 saveas(gcf,filename);
