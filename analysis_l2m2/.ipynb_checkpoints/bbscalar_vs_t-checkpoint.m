@@ -186,7 +186,7 @@ xlabel('$\log_{10}\left(\frac{v}{M}\right)$','Interpreter','latex')
 ylabel('$\log_{10}|\psi_{0}\psi_{4}|$','Interpreter','latex')
 legend('1.0','1.1','1.2','1.3','1.4','$v^{-1}$','Interpreter','latex')
 
-filename = fullfile('../plots_l2m2', 'bbscalar_vs_t_all.pdf');
-%filename = fullfile('../plots_l2m2', 'bbscalar_vs_t_all.fig');
-%filename = fullfile('../plots_l2m2', 'bbscalar_vs_t_all.fig');
+%filename = fullfile('../plots_l2m2', 'bbscalar_vs_t_all.pdf');
+%filename = fullfile('../plots_l2m2', 'bbscalar_vs_t_all.png');
+filename = fullfile('../plots_l2m2', 'bbscalar_vs_t_all.fig');
 saveas(gcf,filename);

@@ -526,35 +526,35 @@ plot(r,oricoeff_1000_14,'k:')
 plot(r,oricoeff_1200_14,'k--')
 plot(r,oricoeff_1400_14,'k.-')
 %}
-plot(r,oricoeff_1000_10,'linewidth',2,'color',[0    0.4470    0.7410])
+plot(r,oricoeff_1000_10,'LineStyle','-','linewidth',2,'color',[0    0.4470    0.7410])
 hold on
-plot(r,oricoeff_1200_10,'linewidth',2,'color',[0    0.4470    0.7410])
-plot(r,oricoeff_1400_10,'linewidth',2,'color',[0    0.4470    0.7410])
+plot(r,oricoeff_1200_10,'LineStyle','-','linewidth',2,'color',[0    0.4470    0.7410])
+plot(r,oricoeff_1400_10,'LineStyle','-','linewidth',2,'color',[0    0.4470    0.7410])
 
-plot(r,oricoeff_1000_11,'linewidth',2,'color',[0.8500    0.3250    0.0980])
-plot(r,oricoeff_1200_11,'linewidth',2,'color',[0.8500    0.3250    0.0980])
-plot(r,oricoeff_1400_11,'linewidth',2,'color',[0.8500    0.3250    0.0980])
+plot(r,oricoeff_1000_11,'LineStyle','--','linewidth',2,'color',[0.8500    0.3250    0.0980])
+plot(r,oricoeff_1200_11,'LineStyle','--','linewidth',2,'color',[0.8500    0.3250    0.0980])
+plot(r,oricoeff_1400_11,'LineStyle','--','linewidth',2,'color',[0.8500    0.3250    0.0980])
 
-plot(r,oricoeff_1000_12,'linewidth',2,'color',[0.9290    0.6940    0.1250])
-plot(r,oricoeff_1200_12,'linewidth',2,'color',[0.9290    0.6940    0.1250])
-plot(r,oricoeff_1400_12,'linewidth',2,'color',[0.9290    0.6940    0.1250])
+plot(r,oricoeff_1000_12,'LineStyle','-.','linewidth',2,'color',[0.9290    0.6940    0.1250])
+plot(r,oricoeff_1200_12,'LineStyle','-.','linewidth',2,'color',[0.9290    0.6940    0.1250])
+plot(r,oricoeff_1400_12,'LineStyle','-.','linewidth',2,'color',[0.9290    0.6940    0.1250])
 
-plot(r,oricoeff_1000_13,'linewidth',2,'color',[0.4940    0.1840    0.5560])
-plot(r,oricoeff_1200_13,'linewidth',2,'color',[0.4940    0.1840    0.5560])
-plot(r,oricoeff_1400_13,'linewidth',2,'color',[0.4940    0.1840    0.5560])
+plot(r,oricoeff_1000_13,'LineStyle',':','linewidth',2,'color',[0.4940    0.1840    0.5560])
+plot(r,oricoeff_1200_13,'LineStyle',':','linewidth',2,'color',[0.4940    0.1840    0.5560])
+plot(r,oricoeff_1400_13,'LineStyle',':','linewidth',2,'color',[0.4940    0.1840    0.5560])
 
-plot(r,oricoeff_1000_14,'linewidth',2,'color',[0.4660    0.6740    0.1880])
-plot(r,oricoeff_1200_14,'linewidth',2,'color',[0.4660    0.6740    0.1880])
-plot(r,oricoeff_1400_14,'linewidth',2,'color',[0.4660    0.6740    0.1880])
+plot(r,oricoeff_1000_14,'LineStyle','-.','linewidth',2,'color',[0.4660    0.6740    0.1880])
+plot(r,oricoeff_1200_14,'LineStyle','-.','linewidth',2,'color',[0.4660    0.6740    0.1880])
+plot(r,oricoeff_1400_14,'LineStyle','-.','linewidth',2,'color',[0.4660    0.6740    0.1880])
 
 hold off
-xlim([-100,1800])
+xlim([-5,20])
 ylim([0,0.2])
 xlabel('$\frac{r}{M}$','Interpreter','latex')
 ylabel('$e^{\xi}_{2,2}$','Interpreter','latex')
 legend('','1.0','','', '1.1', '','', '1.2', '','','1.3' ,'' ,'','1.4' ,'' )
 
 %filename = fullfile('../plots_l2m2', 'oricoeffs_vs_r.pdf');
-filename = fullfile('../plots_l2m2', 'oricoeffs_vs_r.fig');
-%filename = fullfile('../plots_l2m2', 'oricoeffs_vs_r.png');
+%filename = fullfile('../plots_l2m2', 'oricoeffs_vs_r.fig');
+filename = fullfile('../plots_l2m2', 'oricoeffs_vs_r.png');
 saveas(gcf,filename);

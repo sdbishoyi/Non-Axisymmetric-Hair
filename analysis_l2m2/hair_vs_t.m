@@ -193,7 +193,7 @@ xlabel('$\log_{10}\left(\frac{v}{M}\right)$','Interpreter','latex')
 ylabel('$|\xi_{2,2}''|$','Interpreter','latex')
 legend('1.0','1.1','1.2','1.3','1.4','Interpreter','latex')
 
-filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear.pdf');
+%filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear.pdf');
 %filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear.png');
-%filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear.fig');
+filename = fullfile('../plots_l2m2', 'hair_vs_t_all_linear.fig');
 saveas(gcf,filename);

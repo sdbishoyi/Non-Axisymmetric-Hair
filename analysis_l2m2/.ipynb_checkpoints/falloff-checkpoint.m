@@ -1,3 +1,6 @@
+% Gaussian with center at 1.3 is used for the falloff plots of psi0 and psi4
+% at horizon and at finite r.
+
 addpath('../old_data_l2m2/loc13')
 infield_data_horizon = load('Psi0_TimeDAT_0.dat');
 infield_data_finiter = load('Psi0_TimeDAT_4.dat');
@@ -40,7 +43,7 @@ plot(log10(time_outfield_horizon),log10(abs(Psi4_horizon)),'-g','LineWidth',2)
 plot(log10(time_outfield_horizon),1.5*log10(time_outfield_horizon),'--g','LineWidth',2)
 hold off
 xlabel('$\log_{10}\left(\frac{v}{M}\right)$','Interpreter','latex')
-ylabel('Perturbation','Interpreter','latex')
+ylabel('$\log_{10}|\psi_{0}|,\log_{10}|\psi_{4}|$','Interpreter','latex')
 xlim([1,3.5])
 legend('|\psi_0|','\upsilon^{-2.5}','|\psi_4|','\upsilon^{1.5}')
 
@@ -63,7 +66,7 @@ plot(log10(time_outfield_finiter),log10(abs(Psi4_finiter)),'-g','LineWidth',2)
 plot(log10(time_outfield_finiter),-1.0*log10(time_outfield_finiter)+2,'-.g','LineWidth',2)
 hold off
 xlabel('$\log_{10}\left(\frac{t}{M}\right)$','Interpreter','latex')
-ylabel('Perturbation','Interpreter','latex')
+ylabel('$\log_{10}|\psi_{0}|,\log_{10}|\psi_{4}|$','Interpreter','latex')
 xlim([1,3.5])
 legend('|\psi_0|','t^{-1}','|\psi_4|','t^{-1}')
 

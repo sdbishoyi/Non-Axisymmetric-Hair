@@ -1,0 +1,7 @@
+On 05/25/2024
+
+First, there a was a set of data for (l,m)=(3,3). An example of a file from this set is "Psi0_0" Then there was a 2nd batch of data which was higher resolution for the same mode as mentioned above. An example from this set is "Psi0_0hi".
+
+It seems that data for only Gaussian center 1.1 has been included here. But Gaurav's directory would have the data for all Gaussians.
+
+A 3rd batch of data with even higher resolution was added on 05/25/2025. This just the time data i.e "TimeDAT" for Gaussian with center 1.2.
